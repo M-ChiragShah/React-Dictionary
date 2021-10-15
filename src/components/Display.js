@@ -51,7 +51,7 @@ function Display() {
 
   return (
     <>
-      <h1>Dictionary.</h1>
+      <h1 id="header">Dictionary.</h1>
       <div className="main">
         <input
           type="text"

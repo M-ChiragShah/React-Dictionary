@@ -5,7 +5,7 @@ body {
   text-align: center;
 }
 
-h1 {
+h1#header{
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
   font-size: 50px;
@@ -104,6 +104,9 @@ h1#display {
   top: 33%;
   left: 50%;
   text-transform: capitalize;
+  transform: translateX(-50%);
+  font-family: "Poppins",sans-serif;
+  font-size: 50px;
 }
 .container.text-center {
   width: 358px;
@@ -157,7 +160,7 @@ h1#display {
 
 @media screen and (min-width: 300px) and (max-width: 500px){
   
-    h1 {
+    h1#header{
       line-height: 200px;
     }
     body{
