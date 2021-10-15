@@ -155,10 +155,10 @@ h1#display {
   transition: 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (min-width: 300px) and (max-width: 500px){
   
     h1 {
-      top: 16%;
+      line-height: 200px;
     }
     body{
       background-color: black;
