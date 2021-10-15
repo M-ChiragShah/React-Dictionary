@@ -21,6 +21,7 @@ function Display() {
 
   function onclick() {
     console.log(text);
+    
     dictionary()
       .then((data) => {
         document.getElementById("display").innerHTML = text;
@@ -31,6 +32,7 @@ function Display() {
         setpronounce(
           `${data[0].meanings[0].partOfSpeech} / [${data[0].phonetics[0].text}]`
         );
+        document.getElementById("line").style.display="block"
         setexample(data[0].meanings[0].definitions[0].example);
       })
       .catch(function (err) {
@@ -66,7 +68,7 @@ function Display() {
         <div className="container text-center">
           <span className="meaning">
             {meaning}
-            <hr />
+            <hr id="line"/>
             {example}
           </span>
         </div>

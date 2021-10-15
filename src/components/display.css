@@ -9,6 +9,7 @@ h1 {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
   font-size: 50px;
+  font-weight: bold;
   position: absolute;
   top: 5%;
   left: 50%;
@@ -25,7 +26,7 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0);
   transform: translate(-50%, -50%);
   background-color: #9770be;
-  box-shadow: #400251 0 0 20px 7px;
+  box-shadow: #443449 0 0 20px 7px;
   border-radius: 9px;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -163,4 +164,8 @@ h1#display {
       background-color: black;
     }
   
+}
+
+#line{
+  display: none;
 }
