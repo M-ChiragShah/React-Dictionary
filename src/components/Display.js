@@ -21,12 +21,14 @@ function Display() {
 
   function onclick() {
     console.log(text);
+    document.getElementById("display").innerHTML = text;
+    setmeaning("Loading");
     
     dictionary()
       .then((data) => {
-        document.getElementById("display").innerHTML = text;
+        
         console.log(data);
-
+        
         setmeaning(data[0].meanings[0].definitions[0].definition);
 
         setpronounce(
@@ -64,6 +66,7 @@ function Display() {
           <i className="fa fa-search"></i>
         </button>
         <h1 id="display"> </h1>
+        <p id="Loader" className="meaning"></p>
         <p className="pronounce">{pronounce}</p>
         <div className="container text-center">
           <span className="meaning">
